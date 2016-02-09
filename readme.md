@@ -3,5 +3,7 @@
 This uploader uploads the files into uploads directory
 
 `npm install`
+
 `bower install`
-`node .``
+
+`node .`
