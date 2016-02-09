@@ -1,7 +1,7 @@
 # Simple file upload example using AngularJS and NodeJS
 
-## This uploader uploads the files into uploads directory
+This uploader uploads the files into uploads directory
 
-npm install
-bower install
-node .
+`npm install`
+`bower install`
+`node .``
