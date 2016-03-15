@@ -2,11 +2,7 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var http = require('http');
-var fs = require('fs');
-var express = require('express');
 var multer  = require('multer');
-var done       =       false;
-
 
 var storage = multer.diskStorage({
   destination: './uploads/',
@@ -23,12 +19,7 @@ app.set('port', process.env.PORT || 3000);
 
 
 app.post('/savedata', upload.single('file'), function(req,res,next){
-    console.log('Here', req.file, req.body);
-    var currentTime = Date.now();
-    /*fs.writeFile('./json/'+currentTime+'.json', JSON.stringify(req.body), function (err) {
-        if (err) return console.log(err);
-        else res.send();
-    }); */
+    console.log('Uploade Successful ', req.file, req.body);
 });
 
 
